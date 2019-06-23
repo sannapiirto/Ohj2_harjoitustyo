@@ -5,3 +5,15 @@ Ohjelman kuvaus:
 Kirjastoon tallennetaan tietoja kappaleista ja niiden soinnuista. Yhdellä kappaleella voi olla useampia versioita, esimerkiksi alkuperäinen ja säestämistä varten toiseen sävellajiin muutettu versio. Ohjelmaan ei ole mahdollista tallentaa nuotteja tai muuta graafista tietoa, ainoastaan sointuja (esim. Am, C, D#, Bb).
 
 Sovellus on tarkoitettu tueksi kun opettelee kappaleita esimerkiksi korvakuulolta tai netistä löydettyjen sointujen perusteella. “Löydettyjä” sointuja voi helposti kirjoittaa muistiin, mikäli ei halua tehdä tätä paperille.
+
+Ohjelman toiminnallisuus: 
+
+- Kirjaston lisääminen
+- Kappaleen lisääminen
+- Kappaleen poistaminen
+- Kappaleen tietojen muokkaaminen
+- Tietyn kappaleen hakeminen
+- Version lisääminen
+- Version poistaminen
+- Version muokkaaminen
+- Version tulostaminen
