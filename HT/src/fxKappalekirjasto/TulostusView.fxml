@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1"
+			fx:controller="fi.jyu.mit.fxgui.ModalController">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="184.33334350585938" minHeight="10.0" prefHeight="184.33334350585938" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="170.33331298828125" minHeight="10.0" prefHeight="165.66665649414062" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextArea prefHeight="200.0" prefWidth="535.0" text="Kohta Vapaita &#10;&#10;Anna Puu&#10;2016 &#10;Pop &#10;&#10;&quot;Tämä on lempi kappaleeni&quot; &#10;&#10;&#10;------------------------------------------------------------------------------------------" />
+            <TextArea prefHeight="157.0" prefWidth="453.0" text="Am     F      G        C&#10;Am     F      G        C&#10;Dm     F     Am      C " GridPane.rowIndex="1">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </TextArea>
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <HBox prefHeight="39.0" prefWidth="454.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#handleDefaultOK" text="Tulosta">
+               <HBox.margin>
+                  <Insets left="230.0" />
+               </HBox.margin>
+            </Button>
+            <Button cancelButton="true" mnemonicParsing="false" onAction="#handleDefaultCancel" text="Peruuta">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>

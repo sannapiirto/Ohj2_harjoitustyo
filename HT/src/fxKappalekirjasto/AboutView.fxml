@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="276.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1"
+			fx:controller="fi.jyu.mit.fxgui.ModalController">
+   <center>
+      <GridPane prefHeight="370.0" prefWidth="359.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="364.3333333333333" minHeight="10.0" prefHeight="219.66666666666666" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #E6E6FA;">
+               <children>
+                  <Label alignment="BOTTOM_CENTER" prefHeight="112.0" prefWidth="412.0" text="KAPPALEKIRJASTO">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BOTTOM_CENTER" prefHeight="29.0" prefWidth="412.0" text="Versio 1.0" />
+                  <Label alignment="BOTTOM_CENTER" prefHeight="33.0" prefWidth="412.0" text="Sanna Piirto">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <GridPane prefHeight="50.0" prefWidth="352.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.00001525878906" minWidth="10.0" prefWidth="294.00001525878906" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.6666259765625" minWidth="10.0" prefWidth="113.33331807454425" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#handleDefaultOK" text="OK" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>

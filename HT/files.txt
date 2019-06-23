@@ -1,0 +1,56 @@
+=
+= <h3>Ohjelman avustus</h3>
+!https://tim.jyu.fi/view/kurssit/tie/ohj2/2018k/ht/smpiirto = Suunnitelma TIMissä
+kuvat/aloitusnaytto.png        = kuva ohjelman alusta (paintilla piirretty)
+kuvat/ei_aukea.png             = virheilmoitus jos tiedostoa ei ole (paintilla piirretty)
+kuvat/paanaytto.png            = kuva ohjelman päänäkymästä (paintilla piirretty)
+kuvat/version_muokkaaminen.png = kuva version muokkaaus - näkymästä (paintilla piirretty)
+kuvat/aloitusnaytto_sb.png          = kuva ohjelman alusta (scenebuilder)
+kuvat/kappaleen_hakeminen_sb.png    = kuva kappaleen hakemisesta (scenebuilder)
+kuvat/kappaleen_muokkaaminen_sb.png = kuva kappaleen muokkausnäkymästä (scenebuilder)
+kuvat/paanaytto_sb.png              = kuva ohjelman päänäkymästä (scenebuilder)
+kuvat/tietoja_sb.png                = kuva tietoja - näkymästä (scenebuilder)
+kuvat/version_muokkaaminen_sb.png   = kuva version muokkaus näkymästä (scenebuilder)
+kuvat/version_tulostaminen_sb.png   = kuva tulostus-näkymästä (scenebuilder)
+kuvat/virheellinen_kentta_sb.png    = kuva virheilmoituksesta kappaleen muokkausnäkymässä (scenebuilder)
+
+= <h3>Ajettava ohjelma</h3>
+bin/JAR/kappalekirjasto.jar = ajettava ohjelma, lataa ja aja
+
+= <h3>Käyttöliittymän ulkoasu JavaFX:llä</h3>
+src/fxKappalekirjasto/KappalekirjastoMain.java = ohjelman käynnistävä pääluokka
+src/fxKappalekirjasto/KappalekirjastoGUIView.fxml = kappalekirjaston varsinainen käyttöliittymä
+src/fxKappalekirjasto/KappalekirjastoGUIController.java = ohjain joka käsittelee käyttöliittymästä tulevat tapahtumat
+src/fxKappalekirjasto/kappalekirjasto.css = tyylitiedosto (ei vielä muutettu mitään)
+
+src/fxKappalekirjasto/KappalekirjastonNimiView.fxml = dialogi jolla kysytään kappalekirjaston nimi
+src/fxKappalekirjasto/KappalekirjastonNimiController.java = ohjain joka käsittelee kappalekirjaston nimi- näkymästä tulevat käskyt
+src/fxKappalekirjasto/KappaleDialogView.fxml = dialogi jossa muokataan kappaletta tai lisätään uuden kappaleen tiedot
+src/fxKappalekirjasto/KappaleDialogController.java = ohjain, joka käsittelee Kappale-dialogista tulevaat tapahtumat
+src/fxKappalekirjasto/VersioDialogView.fxml = dialogi jossa muokataan versiota tai lisätään uuden version tiedot 
+src/fxKappalekirjasto/VersioDialogController.java = ohjain, joka käsittelee Kappale-dialogista tulevaat tapahtumat
+src/fxKappalekirjasto/AboutView.fxml = dialogi, joka näyttää ohjelman tiedot
+src/fxKappalekirjasto/TulostusView.fxml = alue johon voidaan tulostaa
+
+
+= <h3>Tietorakenne ja luokat</h3>
+@https://tim.jyu.fi/view/kurssit/tie/ohj2/2018k/ht/smpiirto#crc-kortit = CRC-kortit TIMissä
+kuvat/kappalekirjasto_tietorakenne.png  = kuva ohjelman tietorakenteesta
+
+= <h3>Tietorakenteiden käsittely koodissa</h3>
+src/kappalekirjasto/SailoException.java = Poikkeusluokka tietorakenteesta tuleville virheille
+src/kappalekirjasto/Kappale.java = kappale-luokka joka osaa huolehtia omista tiedoistaan
+src/kappalekirjasto/Kappaleet.java = kappaleiden käsittely
+src/kappalekirjasto/Versio.java = versio-luokka joka osaa huolehtia omista tiedoistaan 
+src/kappalekirjasto/Versiot.java = versioiden käsittely 
+src/kappalekirjasto/Kappalekirjasto.java = kappalekirjassto joka välittää pyynnöt Kappale ja Versio-luokille
+
+= <h3>Tietokanta-luokat</h3>
+src/kanta/Apufunktiot.java = random-luku generaattori kehitysvaiheeseen
+
+= <h3>Muita tiedostoja</h3>
+ComTest.ini = asetetaan testit menemään eri hakemistoon
+build.xml = Ant-skripti joka tekee .jar:in
+.project = Eclipsen projekti
+.classpath = Eclipsen luokkapolku
+.settings/org.eclipse.jdt.core.prefs = Eclipsen kääntäjän varoitukset
